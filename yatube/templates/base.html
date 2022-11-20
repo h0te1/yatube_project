@@ -1,14 +1,16 @@
 <!DOCTYPE html> 
-<html lang="ru">          
+<html lang="ru">      
   <head>       
   </head>
   <body>       
     <header>
-      {% include 'includes/header.html' %}
+      {% block title %}
+      главная страница
+      {% endblock %}
     </header>
     <main>
       {% block content %}
-        Контент не подвезли
+        главная страница
       {% endblock %}
     </main>
     <footer>
