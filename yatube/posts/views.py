@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 def index(request):
     templates = 'posts/index.html'
-    return render(request, templates)
+    text = 'Это главная страница проекта Yatube'
+    context = {
+        'text': text,
+    }
+    return render(request, templates, context)

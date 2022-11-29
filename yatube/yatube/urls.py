@@ -18,7 +18,7 @@ from django.urls import path, include
 from . import views
 
 urlpatterns = [
-    path('', include('posts.urls')),
+    path('', include('posts.urls', namespace='posts')),
     path('groups/<slug:slug>/', views.group_posts),
     path('admin/', admin.site.urls),
     ]
